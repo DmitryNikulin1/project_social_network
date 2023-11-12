@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { AppWrapperContent, AppWrepper } from "./App.styled";
+import Navbar from "./Components/Navbar/Navbar";
+import Profile from "./Components/Profile/Profile";
+import Header from "./Components/Header/Header";
+import Dialogs from "./Components/Dialogs/Dialogs";
+import { Route, Routes } from "react-router-dom";
+import News from "./Components/News/News";
+import Settings from "./Components/Settings/Settings";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrepper>
+      <Header />
+      <Navbar />
+      <AppWrapperContent>
+        <Routes>
+          <Route
+            path="/profile"
+            element={<Profile profilePage={props.appStore.profilePage} />}
+          />
+          <Route
+            path="/messages"
+            element={<Dialogs dialogsPage={props.appStore.dialogsPage} />}
+          />
+          <Route path="/news" element={<News />} />
+          <Route path="/music" element={<News />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </AppWrapperContent>
+    </AppWrepper>
   );
 }
 
