@@ -7,8 +7,8 @@ const Dialogs = ({ ...props }) => {
   const dialogElement = props.dialogsPage.dialogs.map((d) => (
     <DialogItem name={d.name} id={d.id} />
   ));
-  const massegesElement = props.dialogsPage.massages.map((m) => (
-    <Message message={m.massage} />
+  const messegesElement = props.dialogsPage.massages.map((m) => (
+    <Message message={m.message} />
   ));
 
   return (
@@ -16,7 +16,7 @@ const Dialogs = ({ ...props }) => {
       <DialogsItem>
         <div>{dialogElement}</div>
       </DialogsItem>
-      <Dialog>{massegesElement}</Dialog>
+      <Dialog>{messegesElement}</Dialog>
     </DialogsWrapper>
   );
 };

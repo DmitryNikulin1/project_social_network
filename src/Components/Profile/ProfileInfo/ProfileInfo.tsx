@@ -1,7 +1,7 @@
 import React from "react";
 import { ImgContent, TextContent } from "./ProfileInfo.styled";
 
-const ProfileInfo = ({ ...props }) => {
+const ProfileInfo = (props) => {
   return (
     <TextContent>
       <div>

@@ -7,6 +7,7 @@ import Dialogs from "./Components/Dialogs/Dialogs";
 import { Route, Routes } from "react-router-dom";
 import News from "./Components/News/News";
 import Settings from "./Components/Settings/Settings";
+import Music from "./Components/Music/Music";
 
 function App(props) {
   return (
@@ -24,7 +25,7 @@ function App(props) {
             element={<Dialogs dialogsPage={props.appStore.dialogsPage} />}
           />
           <Route path="/news" element={<News />} />
-          <Route path="/music" element={<News />} />
+          <Route path="/music" element={<Music />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </AppWrapperContent>

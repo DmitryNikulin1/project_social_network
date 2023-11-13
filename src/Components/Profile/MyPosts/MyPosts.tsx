@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextContent } from "./MyPosts.styled";
+import { Button, Input, TextContent } from "./MyPosts.styled";
 import MyPost from "./Post/MyPost";
 import { MyButton } from "../../UI/MyButton/MyButton";
 import { MyInput } from "../../UI/MyInput/MyInput";
@@ -17,14 +17,16 @@ const MyPosts = (props) => {
   return (
     <TextContent>
       <div>
-        <div>
+        <Input>
           <MyInput
             value={post.messages}
             onChange={(e) => setPost({ ...post, messages: e.target.value })}
             type="text"
           />
-        </div>
-        <MyButton onClick={addNewPost}>Add Post</MyButton>
+        </Input>
+        <Button>
+          <MyButton onClick={addNewPost}>Add Post</MyButton>
+        </Button>
       </div>
       <div>My post</div>
       <div>

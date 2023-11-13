@@ -7,19 +7,19 @@ const Navbar = () => {
     <Nav>
       <div>
         <div>
-          <MyNavLink to="/Profile">Profile</MyNavLink>
+          <MyNavLink to="/profile">Profile</MyNavLink>
         </div>
         <div>
-          <MyNavLink to="/Messages">Messages</MyNavLink>
+          <MyNavLink to="/messages">Messages</MyNavLink>
         </div>
         <div>
-          <MyNavLink to="/News">News</MyNavLink>
+          <MyNavLink to="/news">News</MyNavLink>
         </div>
         <div>
-          <MyNavLink to="/Music">Music</MyNavLink>
+          <MyNavLink to="/music">Music</MyNavLink>
         </div>
         <div>
-          <MyNavLink to="/Settings">Settings</MyNavLink>
+          <MyNavLink to="/settings">Settings</MyNavLink>
         </div>
       </div>
     </Nav>

@@ -23,7 +23,6 @@ export let Store = {
       { id: 5, message: "Yo!" },
       { id: 6, message: "Yo!" },
     ],
-    newMassgesText: "dfds",
   },
 
   siteBar: {
