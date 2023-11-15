@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// export const ImgContent = styled.img`
-//   width: 100%;
-//   height: 150px;
-// `;
+export const Ava = styled.div`
+  margin-top: 10px;
+`;
