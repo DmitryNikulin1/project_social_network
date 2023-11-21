@@ -1,7 +1,8 @@
 import React from "react";
 import { PostImg } from "./MyPost.styled";
 
-const MyPost = ({ ...props }) => {
+const MyPost = (props) => {
+  // debugger
   return (
     <div>
       <div>

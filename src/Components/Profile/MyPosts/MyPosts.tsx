@@ -13,7 +13,7 @@ const MyPosts = (props) => {
     setPosts([...posts, { ...post, id: Date.now() }]);
     setPost({ messages: " " });
   };
-  debugger;
+  
   return (
     <TextContent>
       <div>

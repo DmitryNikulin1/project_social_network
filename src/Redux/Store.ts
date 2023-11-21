@@ -15,7 +15,7 @@ export let Store = {
       { id: 5, name: "Sveta" },
       { id: 6, name: "Sasha" },
     ],
-    massages: [
+    messages: [
       { id: 1, message: "Hi! How are you" },
       { id: 2, message: "Hi. It's okay. And you?" },
       { id: 3, message: "I'm fine" },
