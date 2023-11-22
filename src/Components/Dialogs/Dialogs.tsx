@@ -13,11 +13,11 @@ const Dialogs = (props) => {
     props.dialogsPage.messages
   );
 
-  const [message, setMessage] = useState({ message: " " });
+  const [addMessage, setAddMessage] = useState({ message: " " });
 
   const sendMessage = () => {
-    setMessegesElement([...messegesElement, { ...message, id: Date.now() }]);
-    setMessage({ message: " " });
+    setMessegesElement([...messegesElement, { ...addMessage, id: Date.now() }]);
+    setAddMessage({ message: " " });
   };
 
   // debugger;
@@ -26,21 +26,19 @@ const Dialogs = (props) => {
       <DialogsItem>{dialogElement}</DialogsItem>
       <Dialog>
         {messegesElement.map((m) => (
-          <Message 
-          message={m.message}
-        
-          />
+          <Message message={m.message} />
         ))}
         <div>
           <MyInput
-            value={message.message}
+            value={addMessage.message}
             onChange={(e) =>
-              setMessage({ ...message, message: e.target.value })}
+              setAddMessage({ ...addMessage, message: e.target.value })
+            }
             type="text"
           />
         </div>
         <div>
-          <MyButton onClick={sendMessage} >Send Message</MyButton>
+          <MyButton onClick={sendMessage}>Send Message</MyButton>
         </div>
       </Dialog>
     </DialogsWrapper>

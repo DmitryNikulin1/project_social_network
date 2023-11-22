@@ -1,4 +1,4 @@
-export let Store = {
+export let store = {
   profilePage: {
     posts: [
       { id: 0, messages: "How are you?", likesCount: 23 },
