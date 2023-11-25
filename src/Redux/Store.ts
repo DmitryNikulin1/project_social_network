@@ -14,6 +14,7 @@ export let store = {
       { id: 4, name: "Artem" },
       { id: 5, name: "Sveta" },
       { id: 6, name: "Sasha" },
+      { id: 7, name: "Vladimir" },
     ],
     messages: [
       { id: 1, message: "Hi! How are you" },
