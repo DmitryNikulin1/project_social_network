@@ -27,7 +27,7 @@ export let store = {
     ],
   },
 
-  siteBar: {
+  sideBar: {
     friends: [
       { id: 7, name: "Dmitrii" },
       { id: 8, name: "Valera" },
